@@ -1,7 +1,14 @@
 name: auto_chat_action
-description: A starting point for Dart libraries or applications.
+description: A plugin for Televerse. Let's you automatically send Chat Actions based on the invoking API method.
 version: 1.0.0
 repository: https://github.com/xooniverse/AutoChatAction
+issue_tracker: https://github.com/xooniverse/AutoChatAction/issues
+funding: https://buymeacoffee.com/heysreelal
+topics:
+  - televerse
+  - telegram-bot
+  - plugin
+  - telegram
 
 environment:
   sdk: ^3.4.4
