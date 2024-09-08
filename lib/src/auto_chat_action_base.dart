@@ -105,9 +105,9 @@ class AutoChatAction implements Transformer {
   @override
   Future<Map<String, dynamic>> transform(
     APICaller call,
-    APIMethod method,
-    Payload payload,
-  ) async {
+    APIMethod method, [
+    Payload? payload,
+  ]) async {
     // If the method is not a send method, then just return
     if (!APIMethod.sendMethods.contains(method)) {
       return call(method, payload);
@@ -143,7 +143,7 @@ class AutoChatAction implements Transformer {
         APIMethod.sendChatAction,
         Payload.from(
           {
-            "chat_id": payload["chat_id"],
+            "chat_id": payload?["chat_id"],
             "action": action.value,
           },
         ),
