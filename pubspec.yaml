@@ -1,6 +1,6 @@
 name: auto_chat_action
 description: A plugin for Televerse. Let's you automatically send Chat Actions based on the invoking API method.
-version: 1.1.0
+version: 1.2.0
 repository: https://github.com/xooniverse/AutoChatAction
 issue_tracker: https://github.com/xooniverse/AutoChatAction/issues
 funding:
@@ -15,7 +15,7 @@ environment:
   sdk: ">=3.4.0 <4.0.0"
 
 dependencies:
-  televerse: ^1.26.0
+  televerse: ^2.4.0
 
 dev_dependencies:
   lints: ^3.0.0

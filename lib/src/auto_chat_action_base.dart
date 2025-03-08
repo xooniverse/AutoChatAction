@@ -144,7 +144,7 @@ class AutoChatAction implements Transformer {
         Payload.from(
           {
             "chat_id": payload?["chat_id"],
-            "action": action.value,
+            "action": action..toJson(),
           },
         ),
       ).ignore();
